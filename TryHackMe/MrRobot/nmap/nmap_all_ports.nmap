@@ -1,0 +1,18 @@
+# Nmap 7.92 scan initiated Tue Dec 14 03:37:03 2021 as: nmap -p- -A -T4 -o nmap/nmap_all_ports.nmap 10.10.7.0
+Nmap scan report for 10.10.7.0
+Host is up (0.13s latency).
+Not shown: 65532 filtered tcp ports (no-response)
+PORT    STATE  SERVICE  VERSION
+22/tcp  closed ssh
+80/tcp  open   http     Apache httpd
+|_http-server-header: Apache
+|_http-title: Site doesn't have a title (text/html).
+443/tcp open   ssl/http Apache httpd
+| ssl-cert: Subject: commonName=www.example.com
+| Not valid before: 2015-09-16T10:45:03
+|_Not valid after:  2025-09-13T10:45:03
+|_http-server-header: Apache
+|_http-title: 400 Bad Request
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Dec 14 04:04:27 2021 -- 1 IP address (1 host up) scanned in 1644.11 seconds
